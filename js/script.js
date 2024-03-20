@@ -53,11 +53,10 @@ const myTeam = [
 ]
 console.log(myTeam)
 
-//Stampo in console per ogni membro del gruppo le proprie informazioni
-
+//Stampo in console per ogni membro del gruppo le proprie informazioni e anche nel DOM
 for (let i = 0; i  < myTeam.length; i++) {
     const member = myTeam[i];
-    console.log(member.name)
-    console.log(member.role)
-    console.log(member.photo)
+    console.log("il nome è: " + member.name)
+    console.log("il suo ruolo è: " + member.role)
+    console.log("la sua foto!: " + member.photo)    
 }
