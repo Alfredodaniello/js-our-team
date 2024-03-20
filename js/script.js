@@ -23,32 +23,32 @@ const myTeam = [
     {
       name : "Wayne barnett",
       role : "Founder & CEO",
-      photo : "wayne-barnett-founder-ceo.jpg" 
+      photo : "img/wayne-barnett-founder-ceo.jpg" 
     },
     {
         name : "Angela Caroll",
         role : "Chief Editor",
-        photo : "angela-caroll-chief-editor.jpg" 
+        photo : "img/angela-caroll-chief-editor.jpg" 
       },
       {
         name : "Walter Gordon",
         role : "Office Manager",
-        photo : "walter-gordon-office-manager.jpg" 
+        photo : "img/walter-gordon-office-manager.jpg" 
       },
       {
         name : "Angela Lopez",
         role : "Social Media Manager",
-        photo : "angela-lopez-social-media-manager.jpg" 
+        photo : "img/angela-lopez-social-media-manager.jpg" 
       },
       {
         name : "Scott estrada",
         role : "Developer",
-        photo : "scott-estrada-developer.jpg" 
+        photo : "img/scott-estrada-developer.jpg" 
       },
       {
         name : "Barbara Ramos",
         role : "Graphics Designer",
-        photo : "barbara-ramos-graphic-designer.jpg" 
+        photo : "img/barbara-ramos-graphic-designer.jpg" 
       },
 ]
 console.log(myTeam)
@@ -60,6 +60,6 @@ for (let i = 0; i  < myTeam.length; i++) {
     console.log("il suo ruolo è: " + member.role)
     console.log("la sua foto!: " + member.photo) 
     let newDiv = document.createElement("div");
-    newDiv.innerHTML += `<h2>${member.name}</h2> <h4>${member.role}</h4> <p>${member.photo}</p>`
+    newDiv.innerHTML += `<h2>${member.name}</h2> <h4>${member.role}</h4> <img src="${member.photo}" alt="member">`
     myDiv.append(newDiv);
 }
