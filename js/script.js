@@ -52,11 +52,14 @@ const myTeam = [
       },
 ]
 console.log(myTeam)
-
+const myDiv = document.querySelector("#member")
 //Stampo in console per ogni membro del gruppo le proprie informazioni e anche nel DOM
 for (let i = 0; i  < myTeam.length; i++) {
     const member = myTeam[i];
     console.log("il nome è: " + member.name)
     console.log("il suo ruolo è: " + member.role)
-    console.log("la sua foto!: " + member.photo)    
+    console.log("la sua foto!: " + member.photo) 
+    let newDiv = document.createElement("div");
+    newDiv.innerHTML += `<h2>${member.name}</h2> <h4>${member.role}</h4> <p>${member.photo}</p>`
+    myDiv.append(newDiv);
 }
